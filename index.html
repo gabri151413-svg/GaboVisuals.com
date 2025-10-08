@@ -11,8 +11,7 @@
     body {
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
-      background: url('https://th.bing.com/th/id/OIP.elKcV6HXADt0xfpUBRqWbgHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center fixed;
-      background-size: cover;
+      background: radial-gradient(circle at 50% 0%, #6a0a1b 0%, #1a0022 100%);
       color: #fff;
       min-height: 100vh;
       box-sizing: border-box;
@@ -33,16 +32,7 @@
       position: relative;
       z-index: 2;
     }
-    /* Efeito de tremor suave nas letras */
-    .tremor {
-      display: inline-block;
-      animation: tremor 0.18s infinite alternate;
-      text-shadow: 0 1px 4px #000, 0 0px 2px #222;
-    }
-    @keyframes tremor {
-      0% { transform: translate(0px, 0px) rotate(-0.2deg); }
-      100% { transform: translate(1.2px, -1.2px) rotate(0.2deg); }
-    }
+
     header {
       padding: 32px 16px 0 16px;
       text-align: center;
@@ -193,14 +183,7 @@
       }
     }
   </style>
-  <script>
-    // Aplica a classe de tremor nos principais textos
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('h1, h2, h3, .subtitle, .section-content p, .call p, .about p, footer, .footer-links, .whatsapp-btn').forEach(function(el) {
-        el.classList.add('tremor');
-      });
-    });
-  </script>
+
 </head>
 <body>
   <header>
